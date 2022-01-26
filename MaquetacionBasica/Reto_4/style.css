@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+/* Fuentes
+font-family: 'Roboto', sans-serif; */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+}
+
+.cabecera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFC75F;
+    height: 100px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0px rgba(40, 40, 40, 0.5);
+    margin: 10px 10%;
+    padding: 10px 50px;
+}
+
+.cabecera__titulo{
+    font-family: 'Architects Daughter', cursive;
+    font-size: 20px;
+    color: #6637b3;
+}
+
+.cabecera__parrafo{
+    align-self: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.seccion{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 10%;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.articulo{
+    background-color: #f3f3f3;
+    padding: 15px 0px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid darkgray;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px 20px;
+    margin-top: 10px;
+}
+
+.card{
+    background-color: #FFC75F;
+    color: #6637b3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px rgba(40, 40, 40, 0.5);
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.imagen_foto{
+    width: auto;
+    height: 150px;
+}
+
+.div_fotos{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-wrap: wrap;    
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.galeria{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    width: 25%;
+}
+
+.galeria__imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 0px rgba(40, 40, 40, 0.5);
+    border-radius: 10px;
+    
+}
+
+.inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 10%;
+}
+
+.imagen_inicio{
+    width: 50px;
+    height: 50px;    
+}
+
+.icono_inicio{
+    width: 50px;
+    height: 50px;
+}
