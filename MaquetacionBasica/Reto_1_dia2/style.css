@@ -38,7 +38,7 @@
     width: 240px;
     height: 240px;
     border-radius: 50%;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .yo_foto{
@@ -52,7 +52,7 @@
     justify-content: space-between;
     height: 615px;
     color: white;
-    padding: 10px;
+    padding: 20px;
 }
 
 .personal h3{
@@ -76,7 +76,7 @@
 
 .perfil p{
     text-align: justify;
-    text-indent: 25px;
+    text-indent: 15px;
     font-size: 1rem;
     margin-top: 5px;
 }
@@ -114,7 +114,7 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .redes_iconos{
