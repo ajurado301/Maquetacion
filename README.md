@@ -10,3 +10,9 @@
 - ### Reto 4
     - Galería de fotos
 
+## Maquetación básica (dia2)
+- ### Reto 01
+    - CV con HTML
+- ### Reto 02
+    - Web para codenotch
+
