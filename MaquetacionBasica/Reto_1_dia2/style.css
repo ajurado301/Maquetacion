@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@300;400;500&display=swap');
 
-/* body{
-    background-image: url('./plantilla.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-} */
-
 *{
     margin: 0px;
     padding: 0px;
@@ -76,9 +70,9 @@
     font-weight: 400;
 }
 
-.perfil{
-    /* lo mantenemos por si fuera necesario */
-}
+/* .perfil{
+    lo mantenemos por si fuera necesario
+} */
 
 .perfil p{
     text-align: justify;
@@ -87,9 +81,9 @@
     margin-top: 5px;
 }
 
-.habilidades{
-    /* lo mantenemos por si fuera necesario */
-}
+/* .habilidades{
+    lo mantenemos por si fuera necesario
+} */
 
 .habilidades p{
     font-size: 1.1rem;    
@@ -101,9 +95,9 @@
     list-style: inside;
 }
 
-.contacto{  
-    /* lo mantenemos por si fuera necesario */
-}
+/* .contacto{  
+    lo mantenemos por si fuera necesario
+} */
 
 .iconos{
     display: flex;
