@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>My Travels</title>
+</head>
+<body onload="cargado()">
+
+    <main class="contenedor">
+
+        <header class="cabecera">
+
+            <div class="logo">
+                <h1>Your Travels</h1>
+                <h2>Tu agencia de viajes favorita</h2>
+            </div>
+
+        </header>
+
+        <section class="seccion">
+
+            <aside class="lateral">
+                <article class="aside">
+                    <div class="aside__top">
+                        <h1>QUIENES SOMOS</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ab hic magnam ea ipsum. Itaque nisi ullam tempora commodi! Recusandae nam quis pariatur totam, magni cupiditate ad aliquam ut eligendi distinctio in veritatis adipisci vero corporis numquam impedit aspernatur omnis ipsum asperiores reiciendis</p>
+                    </div>
+                    <div class="aside__center">
+                        <h1>NUESTRA OFERTA</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum et cumque ex aperiam? Delectus corrupti ratione quos itaque facilis nostrum rerum libero id.</p>
+                        
+                    </div>
+                    <div class="aside__bottom">
+                        <h1>DONDE ENCONTRARNOS</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </article>
+            </aside>
+
+            <article class="cards_contenedor"> <!-- Contenedor de tarjetas -->                
+            
+                <div class="card">
+                    <figure class="card__imagen">
+                        <img src="https://www.taranna.com/docs/viaje-a-italia-medida-taranna-001-1.jpg" alt="Foto tarjeta" class="card__imagen__foto">
+                    </figure>
+                    <div class="card__cuerpo">
+                        <h4>La Toscana - Italia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus.</p>
+                    </div>
+                    <div class="card__pie">
+                        <h5>Precio y fechas</h5>
+                        <small>Verano 2022 - 5 días desde 750€</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__imagen">
+                        <img src="https://www.vinccihoteles.com/blog/wp-content/uploads/2021/02/tenerife-1.jpg" alt="Foto tarjeta" class="card__imagen__foto">
+                    </figure>
+                    <div class="card__cuerpo">
+                        <h4>Tenerife - Canarias</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ad eius dolore temporibus amet.</p>
+                    </div>
+                    <div class="card__pie">
+                        <h5>Precio y fechas</h5>
+                        <small>Semana Santa 2022 - 7 días desde 650€</small>
+                    </div>
+                </div>             
+                <div class="card">
+                    <figure class="card__imagen">
+                        <img src="https://media.traveler.es/photos/613775cd72cad4b2dbd5e8a2/master/w_1600%2Cc_limit/112447.jpg" alt="Foto tarjeta" class="card__imagen__foto">
+                    </figure>
+                    <div class="card__cuerpo">
+                        <h4>Vigo - Galicia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae.</p>
+                    </div>
+                    <div class="card__pie">
+                        <h5>Precio y fechas</h5>
+                        <small>Junio 2022 - 7 días desde 500€</small>
+                    </div>
+                </div>
+                        
+            </article>
+            
+
+            <aside class="lateral">
+                <article class="aside">
+                    <form class="aside__form__informacion">
+                        <h1>Solicitar información:</h1>
+                        <input type="text" id="nombre" class="campo" placeholder="Nombre">
+                        <input type="text" id="origen" class="campo" placeholder="Origen">
+                        <input type="text" id="destino" class="campo" placeholder="Destino">
+                        <input type="number" id="personas" class="campo" placeholder="Personas">
+                        <input type="date" id="fecha" class="campo" placeholder="Fecha">
+                        <button onclick="enviarSolicitud()" type="button" id="enviar" class="boton">Enviar</button>
+                    </form>
+                    <form class="aside__form__buscar">
+                        <h1>Búsqueda de solicitudes</h1> 
+                        <div class="checkcampo">
+                            <input onchange="filtrarSolicitudes()" type="radio" id="por_nombre" name=campobuscar value="destino" checked><label for="por_nombre">Nombre</label>
+                            <input onchange="filtrarSolicitudes()" type="radio" id="por_destino" name="campobuscar" value="nombre"><label for="por_destino">Destino</label>
+                        </div>
+                        <input onkeyup="filtrarSolicitudes()" type="text" id="clave" class="campo" placeholder="Introduzca nombre">
+                        <div class="resultados" id="resultados" display="off"></div>
+                    </form>
+                </article>
+            </aside>
+
+        </section>
+
+    </main>
+
+    <table class="tabla">
+      <tr>
+          <th>Nombre</th>
+          <th>Origen</th>
+          <th>Destino</th>
+      </tr>  
+      <tr>
+          <td>Ander</td>
+          <td>Gipuzkoa</td>
+          <td>Tenerife</td>
+      </tr>  
+    </table>
+
+</body>
+</html>
