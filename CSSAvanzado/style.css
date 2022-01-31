@@ -90,7 +90,7 @@
     padding: 10px;
     z-index: -1;
     background-color: var(--secondaryColor);
-    color: var(--primaryColor);
+    color: var(--secondaryColor);
     transition: all .8s ease-in-out;
 }
 
@@ -104,19 +104,15 @@
 
 .personal:hover .supizq{
     background-color: var(--auxiliarColor);
-    color: var(--secondaryColor);
 }
 .personal:hover .supdch{
     background-color: var(--auxiliarColor);
-    color: var(--secondaryColor);
 }
 .personal:hover .infizq{
     background-color: var(--auxiliarColor);
-    color: var(--secondaryColor);
 }
 .personal:hover .infdch{
     background-color: var(--auxiliarColor);
-    color: var(--secondaryColor);
 }
 .personal:hover{
     background-color: var(--secondaryColor);
@@ -380,6 +376,7 @@
 .tecnologia:hover {
     background-color: var(--secondaryColorDark);
     border-color: var(--primaryColor);
+    color: var(--secondaryColor);
 }
 
 .tecnologia:hover .frontend__velo{
@@ -392,4 +389,55 @@
 
 .tecnologia:hover .apoyo__velo{
     background-color: rgba(255, 255, 255, 0);
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid var(--primaryColor);
+}
+
+.titulo {
+    background-color: var(--primaryColor);
+    padding: 15px;
+    color: var(--secondaryColor);
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.campo{
+    padding: 5px;
+}
+
+.campo:focus{
+    box-shadow: 0px 0px 7px var(--specialColorLight);
+    border: none;
+    /* border: 2px solid var(--buttonColorActive); */
+    padding: 5px;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.boton{
+    padding: 5px 25px;   
+    background-color: var(--specialColor);
+    color: var(--secondaryColor);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px var(--primaryColor);
+}
+
+.boton:active{
+    background-color: var(--specialColorLight);
+    box-shadow: none;    
 }

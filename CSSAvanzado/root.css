@@ -9,6 +9,8 @@
     --secondaryColorTrans: rgba(255, 255, 255, 0.3);
     --secondaryColorDark: darkgray;
     --auxiliarColor: grey;
+    --specialColor: blue;
+    --specialColorLight: rgb(70, 70, 252);
 }
 
 *{

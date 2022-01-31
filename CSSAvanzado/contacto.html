@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./root.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Página principal</title>
+    <script src="./script.js"></script>
+    <title>Página de contacto</title>
 </head>
 <body>
     <main class="container">
@@ -38,31 +39,21 @@
         </header>
 
         <section class="medio">
-            <article class="personal">
-                <figure class="yo">
-                    <img src="./img/foto.jpg" alt="Foto del cv" class="yo_foto">
-                </figure>
-                <div class="nombre">                        
-                    <h1>ANDER JURADO</h1>
-                    <P>Desarrolador Web</P>
+            <form class="formulario">
+                <div class="titulo">
+                    <h1>SOLICITUD DE INFORMACION</h1>
                 </div>
-                <div class="supizq">
-                    <h3>Perfil presonal</h3>
-                    <p class="personal__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus velit veritatis quia dolor a, similique, blanditiis repellendus tenetur.</p>
+                <div class="campos">
+                    <input type="text" id="nombre" name="nombre" class="campo" placeholder="Nombre...">
+                    <input type="email" id="correo" name="correo" class="campo" placeholder="Correo...">
+                    <textarea name="consulta" id="consulta" class="campo" cols="30" rows="10" placeholder="Motivo consulta..."></textarea>
                 </div>
-                <div class="supdch">
-                    <h3>Habilidades</h3>
-                    <p class="personal__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus velit veritatis quia dolor a, similique, blanditiis repellendus tenetur.</p>                    
+                <div class="botones">
+                    <button type="button" onclick="enviar()" class="boton">Enviar</button>
+                    <button type="reset" class="boton">Borrar</button>
                 </div>
-                <div class="infizq">
-                    <h3>Experiencia</h3>
-                    <p class="personal__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus velit veritatis quia dolor a, similique, blanditiis repellendus tenetur.</p>                    
-                </div>
-                <div class="infdch">
-                    <h3>Estudios</h3>
-                    <p class="personal__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus velit veritatis quia dolor a, similique, blanditiis repellendus tenetur.</p>
-                </div>
-            </article>
+
+            </form>
 
         </section>
 
