@@ -8,7 +8,7 @@
     --secondaryColor: white;
     --secondaryColorTrans: rgba(255, 255, 255, 0.3);
     --secondaryColorDark: darkgray;
-    --auxiliarColor: #a1b7bb;
+    --auxiliarColor: grey;
 }
 
 *{
