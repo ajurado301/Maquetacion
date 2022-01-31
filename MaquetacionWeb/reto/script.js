@@ -1,9 +1,9 @@
-// Variables globales
+// Array de solicitudes
 let solicitudes = [];
 
 // Cuando carga el DOM inicializamos variables
 function cargado() {
-    // Como cada cambio del js nos vacía el array partimos de un array con datos
+    // Partimos de un array con datos
     solicitudes = [
         { nombre: "Juan", origen: "Bilbao", destino: "Tenerife", personas: "2", fecha: "2022-08-1" },
         { nombre: "Joel", origen: "Barcelona", destino: "Toscana", personas: "2", fecha: "2022-06-27" },

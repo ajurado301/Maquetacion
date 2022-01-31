@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <title>Juego SIMON</title>
+</head>
+<body onload="main()">
+    
+    <main class="contenedor">
+
+        <section id="seccionTitulo" class="seccionTitulo">
+            <div id="contenedorTitulo" class="contenedorTitulo"></div>
+        </section>
+        <h1 class="gameTitle">JUEGO SIMON</h1>
+        <h2 id="actualLevelLives" class="gameState"></h2>
+        <h3 id="memorize" class="memorize"></h3>
+        <div class="buttons">
+            <button onclick="startLevel()" type="button" id="startLevel" class="button"></button>
+            <button onclick="location.reload()" type="button" id="restartGame" class="button">Reiniciar juego</button>
+        </div>
+        <section id="levelColorContainer" class="levelColorContainer"></section><hr>
+        <section id="selectColorContainer" class="selectColorContainer"></section>
+        <button onclick="verificar()" type="button" id="verify" class="verifyButton">Verificar</button>
+    </main>
+
+</body>
+</html>
