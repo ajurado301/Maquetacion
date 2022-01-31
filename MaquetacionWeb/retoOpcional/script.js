@@ -16,8 +16,11 @@ function main() {
 }
 
 function paintTitle(){
-    let textoTitulo = "        JUEGO  SIMON        ";
     contenedorTitulo = document.getElementById('contenedorTitulo');
+    while (contenedorTitulo.childNodes.length > 0) {
+        contenedorTitulo.removeChild(contenedorTitulo.childNodes[0]);
+    }; 
+    let textoTitulo = "        JUEGO  SIMON        ";
     for(let i = 0; i < 28; i++){
         let cuadro = document.createElement('div');
         cuadro.innerHTML = textoTitulo[i];
@@ -82,7 +85,7 @@ function startLevel() {
 function paintLevel() {    
     while (levelColorContainerElement.childNodes.length > 0) {
         levelColorContainerElement.removeChild(levelColorContainerElement.childNodes[0]);
-    };
+    }; 
     gameParameters.levelColors.forEach((color) => {
         let levelColor = document.createElement('div');
         levelColor.classList.add('colorSquare');
