@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans+Condensed:wght@300&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #fafafa;
+}
+
+/* Contenedor principal */
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+/************/
+/* Cabecera */
+/************/
+/* div para abarcar todo el ancho */
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+/* div con datos */
+.header__data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    max-width: 1000px;
+    width: 100%;    
+    height: 60px;
+    padding: 0px 20px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.header__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+
+.header__logoImg{
+    width: auto;
+    height: 80%;
+}
+
+.header__div1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__div1 input{
+    background-color: #efefef;
+    padding: 7px 10px;
+    border: none;    
+    border-radius: 5px;
+}
+
+.header__div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__div2 p{
+    color: #0095f6;
+}
+
+.boton{    
+    background-color: #0095f6;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*********************/
+/* Sección principal */
+/*********************/
+/* seccion para contener todo menos el header y el footer */
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    height: auto;
+    /* border: var(--bBlack); */
+}
+
+/***************************************/
+/* Artículo para el apartado superior */
+/***************************************/
+/* Contenedor grid */
+.superior{
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] 4fr [y5];
+    width: 100%;
+    height: 300px;        
+}
+/* div aSup */
+.aSup{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    grid-column: x0/x1;
+    grid-row: y0/y5;
+}
+.aSup__img{
+    width: 330px;
+    height: auto;
+}
+/* div bSup */
+.bSup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: x1/x2;
+    grid-row: y0/y1;
+}
+.bSup h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+/* div cSup */
+.cSup{    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: x2/x3;
+    grid-row: y0/y1;
+}
+/* div dSup */
+.dSup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-column: x1/x3;
+    grid-row: y1/y2;
+    gap: 20px;
+}
+/* div eSup */
+.eSup{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    grid-column: x1/x3;
+    grid-row: y2/y5;
+}
+
+.pgris{
+    color: gray;
+}
+
+.pazul{
+    color: #00376b;
+}
+
+/***************************/
+/* Artículo para conocenos */
+/***************************/
+/* Contenedor conocenos */
+.conocenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    gap: 30px;
+    margin-top: 20px;
+}
+/* Conocenos div (para imagen y texto) */
+.conocenos__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conocenos__div h5{
+    margin-top: 5px;
+}
+/* Figure para la imagen */
+.figConocenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+.figConocenos__img{
+    width: 100%;
+    height: 100%;
+}
+
+/************************************************************/
+/* Artículo para estadísticas (inicialmente no visualizado) */
+/************************************************************/
+/* Contenedor de estadisticas */
+.estadisticas{
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 10px;
+    border-top: 1px solid lightgray;    
+}
+
+.estadisticas_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.estadisticas_divsup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.estadisticas_divsup h3{
+    margin-right: 5px;
+}
+
+/****************************************************************/
+/* Artículo para las publicaciones (alternando entre 2 modelos) */
+/****************************************************************/
+.publicaciones1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid lightgray;
+}
+
+.publicaciones2{
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid lightgray;
+}
+
+.figPubli{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 10px;
+}
+.figPubli__img{
+    width: auto;
+    height: 100%;
+}
+
+/***************************/
+/* Artículo para las fotos */
+/***************************/
+/* Contenedor fotos */
+.fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3.5%;
+}
+/* Figure para la foto */
+.figFoto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+    height: auto;
+    margin-top: 3%;
+}
+
+.figFoto_foto{
+    width: 100%;
+    height: auto;
+}
+
+/**************************************/
+/* Artículo para cuentas relacionadas */
+/**************************************/
+/* Contenedor para las cuentas relacionadas */
+.cuentas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid lightgray;
+}
+/* div para el texto superior */
+.cuentas__div1{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.cuentas__div1 p{
+    background-color: white;
+}
+
+.cuentas__div1__pazul{
+    color: #0095f6;
+}
+
+.cuentas__div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.figCuentas__img{
+    width: 100%;
+    height: 100%;
+}
+
+/**********/
+/* Footer */
+/**********/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+}
+
+.primeralinea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 12px;
+}
+
+.footer a{
+    font-size: 12px;
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+.ultimalinea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.ultimalinea select{
+    color: #8e8e8e;
+    border: none;
+}
+
+
+
+
+/* Media queries */
+@media screen and (max-width: 641px){
+    /* Ocultamos el input de busqueda */
+    .header__div1{
+        display: none;
+    }
+}
+@media screen and (max-width: 736px) {
+    /* Reorganizar sección superior */
+    .dSup{
+        display: none;
+    }
+    .aSup{
+        grid-column: x0/x1;
+        grid-row: y0/y3;
+    }
+    .aSup__img{
+        width: 225px;
+    }
+    .bSup{
+        grid-column: x1/x3;
+        justify-content: flex-start;
+        grid-row: y0/y1;
+    }
+    .bSup h2{
+        font-size: 40px;
+    }
+    .cSup{
+        grid-column: x1/x3;
+        grid-row: y1/y2;
+    }
+    .cSup button{
+        width: 190px;
+    }
+    .eSup{
+        grid-column: x0/x3;
+        grid-row: y3/y5;
+        padding-left: 20px;
+    }
+    /* gap y redimensionar iconos sección conocenos */
+    .conocenos{
+        gap: 15px;
+    }
+    .figConocenos{
+        width: 60px;
+        height: 60px;
+    }
+    .conocenos__div h5{
+        font-size: 8px;
+    }
+    /* Habilitar estadísticas */
+    .estadisticas{
+        display: flex;
+    }
+    /* Agrandar fotos y quitar gap */
+    .fotos{
+        gap: 0.3%;
+        margin-top: 20px;
+    }
+    .figFoto{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        height: auto;
+        margin-top: 0.3333%;
+    }
+    /* Cambiar barra de publicaciones */
+    .publicaciones1{
+        display: none;
+    }
+    .publicaciones2{
+        display:flex;
+    }
+    .figPubli{
+        height: 20px;
+    }
+}
