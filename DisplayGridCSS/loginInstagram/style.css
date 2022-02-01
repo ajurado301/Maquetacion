@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans+Condensed:wght@300&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Noto Sans', sans-serif; */
+/* font-family: 'Open Sans Condensed', sans-serif; */
+/* font-family: 'Public Sans', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+    background-color: #fafafa;
+    font-size: 14px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    height: 80%;
+}
+
+.izquierda{
+    display: none;
+    width: 400px;
+    height: 100%;
+}
+
+.moviles_img{
+    width: 100%;
+    height: 100%;
+}
+
+.derecha{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 400px;
+    height: 100%;
+}
+
+.bloqueform{
+    background-color: white;
+    width: 100%;
+    height: 65%;
+    padding: 10px 30px;
+    border: 1px solid #8e8e8e;    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.logo__img{
+    width: 185px;
+    height: 57px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo{
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 10px 10px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    border: 1px solid #8e8e8e;    
+}
+
+.boton{    
+    background-color: #b2dffc;
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.opciones{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.forgetpass{
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.separador{
+    color: #8e8e8e;
+    font-size: 16px;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.facebook p{
+    color: #383185;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.facebooklogo{
+    margin-right: 10px;
+}
+
+.registrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+    border: 1px solid #8e8e8e;    
+}
+
+.registrar p::after{
+    color: #0065f6;
+    content: " Registrate";
+
+}
+
+.descargar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+
+.stores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 150px;
+}
+
+.primeralinea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.segundalinea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+    margin-top: 10px;
+}
+
+.footer a{
+    font-size: 12px;
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+.ultimalinea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 10px;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.ultimalinea select{
+    color: #8e8e8e;
+    border: none;
+}
+
+/* Media queries */
+@media screen and (min-width: 875px) {
+    .izquierda{
+        display: flex;
+    }
+}
