@@ -22,3 +22,7 @@
 - ### Reto opcional
     - Juego SIMON
   
+## CSS Avanzado (dia4)
+- ### Reto
+    - Portfolio con animaciones y efectos
+    
