@@ -349,3 +349,11 @@
     font-size: 16px;
 }
 /* Fin estado */
+
+/*************************************/
+/* Clases para usar desde javascript */
+/*************************************/
+
+.borde{
+    border: 5px solid green;
+}

@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="./root.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mqueries.css">
+    <script src="./script.js"></script>
     <title>3 en Raya</title>
 </head>
-<body>
+<body onload="main()">
     
     <main class="main">
 
@@ -37,59 +38,96 @@
                         <h1>Jugador</h1>
                     </div>
                     <div class="juga1Win">
-                        <h1>0</h1>
+                        <h1 id="ganadasX"></h1>
                     </div>
                     <div class="juga2Text">
                         <h1>Jugador</h1>
                     </div>
                     <div class="juga2Win">
-                        <h1>0</h1>
+                        <h1 id="ganadasO"></h1>
                     </div>
                     <div class="totalText">
                         <h1>PARTIDAS JUGADAS</h1>
                     </div>
                     <div class="totalPlay">
-                        <h1>0</h1>
+                        <h1 id="totalPartidas"></h1>
                     </div>
                 </div>
             </section>
 
             <section class="tablero">
-                <div class="tabContainer">
-                    <div class="cuadro1">
-                        <img src="./img/X.png" onerror="this.style.display='none'" alt="" class="cuadro1__img"/>
+                <div id="tabContainer" class="tabContainer">
+                    <div class="cuadro1 cuadrodiv"> 
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             draggable="false"
+                             class="cuadro1__img cuadro">
                     </div>
-                    <div class="cuadro2">
-                        <img src="./img/o.png" onerror="this.style.display='none'" alt="" class="cuadro2__img">
+                    <div class="cuadro2 cuadrodiv">
+                        <img src="./img/blanco.png"
+                            onmouseover="bgCuadro(this)"
+                            onmouseOut="bgCuadro(this)"
+                            onclick="ponerFicha(this)"
+                            class="cuadro2__img cuadro">
                     </div>
-                    <div class="cuadro3">
-                        <img src="./img/X.png" onerror="this.style.display='none'" alt="" class="cuadro3__img">
+                    <div class="cuadro3 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro3__img cuadro">
                     </div>
-                    <div class="cuadro4">
-                        <img src="./img/o.png" onerror="this.style.display='none'" alt="" class="cuadro4__img">
+                    <div class="cuadro4 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro4__img cuadro">
                     </div>
-                    <div class="cuadro5">
-                        <img src="./img/X.png" onerror="this.style.display='none'" alt="" class="cuadro5__img">
+                    <div class="cuadro5 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro5__img cuadro">
                     </div>
-                    <div class="cuadro6">
-                        <img src="./img/o.png" onerror="this.style.display='none'" alt="" class="cuadro6__img">
+                    <div class="cuadro6 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro6__img cuadro">
                     </div>
-                    <div class="cuadro7">
-                        <img src="./img/X.png" onerror="this.style.display='none'" alt="" class="cuadro7__img">
+                    <div class="cuadro7 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro7__img cuadro">
                     </div>
-                    <div class="cuadro8">
-                        <img src="./img/o.png" onerror="this.style.display='none'" alt="" class="cuadro8__img">
+                    <div class="cuadro8 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro8__img cuadro">
                     </div>
-                    <div class="cuadro9">
-                        <img src="./img/X.png" onerror="this.style.display='none'" alt="" class="cuadro9__img">
+                    <div class="cuadro9 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro9__img cuadro">
                     </div>
                 </div>                
             </section>
 
             <section class="botonera">
                 <div class="botContainer">
-                    <button type="button" class="boton">Reinicio partida</button>
-                    <button type="button" class="boton">Reinicio total</button>
+                    <button onclick="reiniciarTablero()" type="button" class="boton">Reinicio partida</button>
+                    <button onclick="reinicioTotal()" type="button" class="boton">Reinicio total</button>
                 </div>
             </section>
 
@@ -97,11 +135,11 @@
                 <div class="estContainer">
                     <div class="turno">
                         <h1>TURNO PARA:</h1>
-                        <p>Jugador ?</p>
+                        <p id="turno">Jugador ?</p>
                     </div>
                     <div class="ultimo">
                         <h1>ULTIMO GANADOR</h1>
-                        <p>Jugador ?</p>
+                        <p id="ultimo">Jugador ?</p>
                     </div>
                 </div>
             </setcion>
