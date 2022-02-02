@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Luckiest+Guy&family=Kaushan+Script&display=swap');
+
+:root{
+    /***********/
+    /* Fuentes */
+    /***********/    
+    /* font */
+    --lato: 'Lato', sans-serif;
+    --luckiest: 'Luckiest Guy', cursive;
+    --kaushan: 'Kaushan Script', cursive;
+    
+    /*******************************/
+    /* Bordes varios para maquetar */
+    /*******************************/    
+    --bBlack: 2px solid black;
+    --bRed: 2px solid red;
+    --bBlue: 2px solid blue;
+    --bGreen: 2px solid green;
+    --bPurple: 2px solid purple;
+    --bOrange: 2px solid orange;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--lato);
+}
