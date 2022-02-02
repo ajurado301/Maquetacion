@@ -1,0 +1,359 @@
+/***********************************************************************/
+/* Contenedores principal y central */
+/***********************************************************************/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vp;
+    height: 100vh;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+}
+
+/***********************************************************************/
+/* Título */
+/***********************************************************************/
+.titulo{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tilContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    
+    width: 90%;
+    height: 90%;
+}
+
+.titulo1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: auto;   
+    height: 100%;
+}
+.titulo1 p, .titulo3 p{
+    font-family: var(--luckiest);
+    font-size: 36px;    
+}
+.titulo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100%;
+}
+.titulo2 h1{
+    font-family: var(--luckiest);
+    font-size: 150px;
+}
+.titulo3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;    
+    width: auto;   
+    height: 100%;
+}
+/* Fin titulo */
+
+/***********************************************************************/
+/* Marcadores */
+/***********************************************************************/
+.marcadores{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* background-color: lightseagreen; */
+}
+ 
+.marContainer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    
+    width: 90%;
+    height: 90%;
+}
+
+.juga1Text h1, .juga2Text h1, .totalText h1{
+    font-family: var(--kaushan);
+    font-size: 16px;
+}
+.juga1Text h1::after{
+    content: 'X';
+    color: red;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.juga2Text h1::after{
+    content: 'O';
+    color: blue;
+    font-size: 18px;
+    margin-left: 10px;
+}
+/* .juga1Text h1::first-letter{
+    color: red;
+}
+.juga2Text h1::first-letter{
+    color: blue;
+} */
+
+.juga1Text, .juga2Text, .totalText{
+    margin: 10% 0;
+    padding: 5% 15%;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.juga1Win h1, .juga2Win h1, .totalPlay h1{
+    font-family: var(--kaushan);
+    font-size: 22px;
+}
+
+.juga1Text{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.juga1Win{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    color: red;
+    
+}
+
+.juga2Text{
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.juga2Win{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 5%;
+    color: blue;
+
+}
+
+.totalText{
+    grid-column: 4/6;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.totalPlay{
+    grid-column: 4/6;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+}
+/* Fin marcadores */
+
+/***********************************************************************/
+/* Tablero */
+/***********************************************************************/
+.tablero{
+    grid-column: 1/4;
+    grid-row: 4/7;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.tabContainer{
+    display: flex;   
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    width: 90%;
+    height: 90%;
+}
+
+.cuadro1,
+.cuadro2,
+.cuadro3,
+.cuadro4,
+.cuadro5,
+.cuadro6,
+.cuadro7,
+.cuadro8,
+.cuadro9{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 33.3333%;
+    height: 33.3333%;
+    border-radius: 25%;
+}
+
+.cuadro1{
+    border-right: var(--bBlack);
+    border-bottom: var(--bBlack);
+}
+.cuadro2{
+    border-bottom: var(--bBlack);
+}
+.cuadro3{
+    border-left: var(--bBlack);
+    border-bottom: var(--bBlack);
+}
+.cuadro4{
+    border-right: var(--bBlack);
+}
+.cuadro5{
+    border: var(--bBlack);
+}
+.cuadro6{
+    border-left: var(--bBlack);
+}
+.cuadro7{
+    border-right: var(--bBlack);
+    border-top: var(--bBlack);
+}
+.cuadro8{
+    border-top: var(--bBlack);
+}
+.cuadro9{
+    border-left: var(--bBlack);
+    border-top: var(--bBlack);
+}
+
+.cuadro1__img,
+.cuadro2__img,
+.cuadro3__img,
+.cuadro4__img,
+.cuadro5__img,
+.cuadro6__img,
+.cuadro7__img,
+.cuadro8__img,
+.cuadro9__img{
+    width: 80%;
+    height: 80%;
+}
+
+/* Fin tablero */
+
+/***********************************************************************/
+/* Botonera */
+/***********************************************************************/
+.botonera{
+    grid-column: 1/3;
+    grid-row: 7/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botContainer{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    
+    width: 90%;
+    height: 90%;
+}
+
+.boton{
+    width: 95%;
+    padding: 15px 0px;
+    background-color: cornflowerblue;
+    font-size: var(--lato);
+    font-size: 14px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.boton:active{
+    box-shadow: none;
+}
+/* Fin botonera */
+
+/***********************************************************************/
+/* Estado */
+/***********************************************************************/
+.estado{
+    grid-column: 3/4;
+    grid-row: 7/9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 10px;
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+}
+
+.turno, .ultimo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+.turno h1, .ultimo h1{
+    font-family: var(--kaushan);
+    font-size: 16px;
+}
+.turno p, .ultimo p{
+    font-family: var(--kaushan);
+    font-size: 16px;
+}
+/* Fin estado */
+
+/*************************************/
+/* Clases para usar desde javascript */
+/*************************************/
+
+.borde{
+    border: 5px solid green;
+}

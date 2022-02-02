@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./root.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mqueries.css">
+    <script src="./script.js"></script>
+    <title>3 en Raya</title>
+</head>
+<body onload="main()">
+    
+    <main class="main">
+
+        <article class="container">
+
+            <section class="titulo">
+                <div class="tilContainer">
+                    <div class="titulo1">
+                        <p>JUEGO</p>
+                        <p>DEL</p>
+                    </div>
+                    <div class="titulo2">
+                        <h1>3</h1>
+                    </div>
+                    <div class="titulo3">
+                        <p>EN</p>
+                        <p>RAYA</p>
+                    </div>                    
+                </div>
+            </section>
+
+            <section class="marcadores">
+                <div class="marContainer">
+                    <div class="juga1Text">
+                        <h1>Jugador</h1>
+                    </div>
+                    <div class="juga1Win">
+                        <h1 id="ganadasX"></h1>
+                    </div>
+                    <div class="juga2Text">
+                        <h1>Jugador</h1>
+                    </div>
+                    <div class="juga2Win">
+                        <h1 id="ganadasO"></h1>
+                    </div>
+                    <div class="totalText">
+                        <h1>PARTIDAS JUGADAS</h1>
+                    </div>
+                    <div class="totalPlay">
+                        <h1 id="totalPartidas"></h1>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tablero">
+                <div id="tabContainer" class="tabContainer">
+                    <div class="cuadro1 cuadrodiv"> 
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             draggable="false"
+                             class="cuadro1__img cuadro">
+                    </div>
+                    <div class="cuadro2 cuadrodiv">
+                        <img src="./img/blanco.png"
+                            onmouseover="bgCuadro(this)"
+                            onmouseOut="bgCuadro(this)"
+                            onclick="ponerFicha(this)"
+                            class="cuadro2__img cuadro">
+                    </div>
+                    <div class="cuadro3 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro3__img cuadro">
+                    </div>
+                    <div class="cuadro4 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro4__img cuadro">
+                    </div>
+                    <div class="cuadro5 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro5__img cuadro">
+                    </div>
+                    <div class="cuadro6 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro6__img cuadro">
+                    </div>
+                    <div class="cuadro7 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro7__img cuadro">
+                    </div>
+                    <div class="cuadro8 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro8__img cuadro">
+                    </div>
+                    <div class="cuadro9 cuadrodiv">
+                        <img src="./img/blanco.png"
+                             onmouseover="bgCuadro(this)"
+                             onmouseOut="bgCuadro(this)"
+                             onclick="ponerFicha(this)"
+                             class="cuadro9__img cuadro">
+                    </div>
+                </div>                
+            </section>
+
+            <section class="botonera">
+                <div class="botContainer">
+                    <button onclick="reiniciarTablero()" type="button" class="boton">Reinicio partida</button>
+                    <button onclick="reinicioTotal()" type="button" class="boton">Reinicio total</button>
+                </div>
+            </section>
+
+            <setcion class="estado">
+                <div class="estContainer">
+                    <div class="turno">
+                        <h1>TURNO PARA:</h1>
+                        <p id="turno">Jugador ?</p>
+                    </div>
+                    <div class="ultimo">
+                        <h1>ULTIMO GANADOR</h1>
+                        <p id="ultimo">Jugador ?</p>
+                    </div>
+                </div>
+            </setcion>
+
+        </article>
+
+    </main>
+
+</body>
+</html>
