@@ -116,13 +116,11 @@ jQuery(() => {
 
 })
 
-// añadir/modificar cantidad del producto del del carro HTM. indice = producto del carro a modificar o si es = al length del carro añadir nuevo
+// añadir/modificar cantidad del producto del carro HTML. indice = producto del carro a modificar o si es = al length del carro añadir nuevo
 function actualizarCarritoHTML(indice){
     if (indice >= productosCarrito.length) {
-        console.log('Agregar producto ' + (indice - 1) + ' en el carro HTML');
         agregarAlCarro(indice - 1);
     }else {
-        console.log('Modificar cantidad y subtotal del producto ' + indice + ' en el carro HTML');
         modificarCarritoHTML(indice)
     }
 }
@@ -160,18 +158,12 @@ function agregarAlCarro(indice){
 function modificarCarritoHTML(indice){
     let idCardCantidad = '#carro' + indice.toString() + "cantidad";
     let idCardSubtotal = '#carro' + indice.toString() + "subtotal";
-    console.log('id cantidad: #carro' + indice.toString() + "cantidad");
-    console.log('id subtotal: #carro' + indice.toString() + "subtotal");
     let cantidadHTML = $(idCardCantidad);
     let subtotalHTML = $(idCardSubtotal);
-    console.log('En variable: ', productosCarrito[indice].cantidad);
-    console.log('Elemento html: ', cantidadHTML);
     cantidadHTML.text(productosCarrito[indice].cantidad);
     subtotalHTML.text(productosCarrito[indice].cantidad * prendas[productosCarrito[indice].id].precio + '€');
     textoCarrito();
 }
-
-// console.log($('#' + i.toString()).parent().parent().remove()); // TODO: al cierre del carro borrar productos a 0
 
 // Sumar 1 a la cantidad de productosCarrito y modificarHTML
 function sumar(indice){
@@ -343,7 +335,6 @@ function eliminarCarritoCero(){
     if (productosCarrito.length != longitudInicial) {
         for (let i = 0; i  < idCards.length; i++) {
             $(idCards[i]).attr('id', 'carro' + i.toString());
-            console.log($(idCards[i] + 'cantidad').attr('id', 'carro' + i.toString() + 'cantidad'));
             $(idCards[i] + 'cantidad').attr('id', 'carro' + i.toString() + 'cantidad');
             $(idCards[i] + 'subtotal').attr('id', 'carro' + i.toString() + 'subtotal');
             let restar = $(idCards[i] + 'restarcantidad');
