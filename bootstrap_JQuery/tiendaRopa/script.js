@@ -79,13 +79,13 @@ let precioTotal = 0;
 let delay = 0;
 
 // Elementos HTML
-carrito = $('carrito');
+let carrito = $('carrito');
 
 // Carga del DOM
 jQuery(() => {
 
     // Generar contenido HTML de las prendas
-    generarContenidoHTML(0);
+    generarContenidoHTML();
 
     // Mostrar contenedor de ropa de mujer
     $('#ropa-mujer').show(delay);
