@@ -15,13 +15,5 @@ class Professional {
         this.oscarsNumber = oscarsNumber;
         this.profession = profession;
         this.urlFoto = urlFoto;
-    }
-    // Métodos públicos
-    printProfessional() {
-        console.log("Atributos de", this.name);
-        for (let atributo in this) {
-            console.log(atributo + ":", this[atributo]);
-        }
-        ;
-    }
+    };
 }

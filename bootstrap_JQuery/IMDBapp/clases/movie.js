@@ -14,12 +14,4 @@ class Movie {
         this.genre = "";
         this.urlFoto = "";
     }
-
-    // Métodos públicos
-    printMovie() {
-        console.log("Atributos de la película", this.title);
-        for (let atributo in this) {
-            console.log(atributo + ":", this[atributo]);
-        };
-    }
 }

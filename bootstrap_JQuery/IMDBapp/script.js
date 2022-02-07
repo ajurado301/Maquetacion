@@ -121,9 +121,9 @@ jQuery(() => {
 // Generar películas en HTML
 //***************************************************************************
 function generarPeliculasHTML(){
-    imdb.peliculas.forEach((pelicula, indice) => {
-        generarPeliculaHTML(indice);
-    });
+    for (let i = 0; i < imdb.peliculas.length; i++) {
+        generarPeliculaHTML(i);
+    };
 }
 function generarPeliculaHTML(indice) {
     let peliculaElementoHTML = $('#peliculas');
